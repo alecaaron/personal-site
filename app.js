@@ -1,12 +1,13 @@
 const express = require('express');
-const app = express();
-const helmet = require('helmet');
-  app.use(helmet());
-const compress = require('compression');
-  app.use(compress());
-const Port = 1234; // process.env.PORT || 8080;
 const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({extended: true}));
+const helmet = require('helmet');
+const compress = require('compression');
+const app = express();
+      app.use(bodyParser.urlencoded({extended: true}));
+      app.use(helmet());
+      app.use(compress());
+
+const Port = 1234; // process.env.PORT || 8080;
 
 //set up templating engine
 app.set('views', './views');
@@ -16,7 +17,6 @@ app.set('view engine', 'ejs');
 app.use("/public", express.static('./assets/'));
 app.use("/", express.static('./stylesheets/'));
 app.use("/", express.static("./node_modules/"))
-
 
 // call routes
 const Home = require('./routes/__home__');
@@ -30,8 +30,6 @@ app.use('/sendMail', sendMail);
 
 // const Projects = require('./routes/__projects__');
 // app.use('/projects', Projects);
-
-
 
 
 app.listen(Port, ()=>{

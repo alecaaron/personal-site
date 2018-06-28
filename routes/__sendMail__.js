@@ -12,7 +12,9 @@ let transport = nodeMailer.createTransport({
   tls: {rejectUnauthorized: false}
 });
 
-module.exports = express.Router().post('/', (req,res)=>{
+module.exports = express.Router()
+
+.post('/', (req,res)=>{
 
   let mail = {
     from: {
@@ -29,4 +31,9 @@ module.exports = express.Router().post('/', (req,res)=>{
     console.log('Message sent: %s', info.message);
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
   });
+})
+
+
+.get('/', (req, res)=>{
+  res.render('404');
 });
