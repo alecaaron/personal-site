@@ -1,0 +1,139 @@
+@import "../base/colors";
+
+#contact{ //whole contact footer section
+  background: $color-accent;
+  color: white;
+  height: auto;
+  padding-top: 5em;
+  padding-bottom: 2em;
+
+  button{
+    display: block;
+    margin: 3em auto 3em auto;
+  }
+  & > div{
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-around;
+    width:60%;
+  }
+}
+.social-media{
+  display: inline-block;
+  text-align: center;
+  margin-top: 0;
+  margin: 0;
+  width: auto;
+  a{
+    font-weight: bold;
+    font-size: 1rem;
+    padding: .5em;
+    color: white;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+s
+form{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.form{//begin components
+
+  &-wrapper{
+    display:flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 75rem;
+    width: auto;
+    margin: 0 auto 0 auto;
+
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: .5rem;
+
+    }
+
+  }
+
+  &-field{
+
+    display: flex;
+    flex: 0 1 auto; //fuck you microsoft
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+
+    %equal-border{
+      border: none;
+      border-bottom: 3px white solid;
+    }
+
+    label{
+      @extend %equal-border;
+      font-size: 1.3em;
+      padding-right: 1.5rem;
+    }
+
+    input{
+      @extend %equal-border;
+      background: none;
+      outline: none;
+    }
+
+  }
+
+  &-user{
+
+    $form-input-width: 18em;
+
+    &-info{
+      max-width: $form-input-width;
+    }
+
+    &-message{
+
+      flex-direction: column;
+      max-width: $form-input-width;
+
+      textarea{
+        border: none;
+        outline: none;
+        height: 5.5em;
+        width: 100%;
+      }
+
+    }
+
+  }
+}
+
+@media (max-width: 53.57em){
+  .form{
+
+    &-wrapper{
+      width: auto;
+      justify-content: space-between;
+    }
+  }
+
+}
+
+@media (max-width: 42.86em){
+
+  .form-wrapper{
+    justify-content: center;
+  }
+
+}

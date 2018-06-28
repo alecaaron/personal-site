@@ -1,0 +1,88 @@
+<%- include components/header.ejs %>
+<%- include components/nav-bar.ejs %>
+
+<div id="resume-wrapper">
+  <section id="resume-header">
+    <span class="rellax-el" data-rellax-speed="-2">
+      <h1>Alec Alegria</h1>
+      <h2>Product Designer</h2>
+      <a href="#" class="btn-gold btn-lrg" download>Download Resume</a>
+    </span>
+  </section>
+  <article id="resume-body">
+    <!-- About -->
+    <section class="resume-block" id="resume-section-about">
+      <h2 class="resume-block-heading">About</h2>
+      <p class="resume-blurb">
+        <%= about %>
+      </p>
+    </section>
+
+    <!--Experience-->
+    <section class="resume-block" id="resume-section-work">
+      <h2 class="resume-block-heading">Experience</h2>
+      <div class="resume-info--wrapper">
+        <div class="resume-block-info">
+          <h3 class="resume-block-title"><%= work.position %></h3>
+          <span class="highlight resume-block-entity"><%= work.company %></span>
+          <hr class="divide--vertical"/>
+          <span class="resume-block-year"><%= work.startDate %></span>
+          <p class="resume-block-description"><%= work.summary %></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="resume-block" id="resume-section-edu">
+      <h2 class="resume-block-heading">Education</h2>
+      <div class="resume-info--wrapper">
+        <div class="resume-block-info">
+          <h3 class="resume-block-title"><%= edu.studyType %></h3>
+          <span class="highlight resume-block-entity"><%= edu.institution %></span>
+          <hr class="divide--vertical"/>
+          <span class="resume-block-year"><%= edu.endDate %></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="resume-block" id="resume-section-awards">
+      <h2 class="resume-block-heading">Awards</h2>
+      <div class="resume-info--wrapper">
+      <% awards.forEach(award =>{ %>
+        <div class="resume-block-info">
+          <h3 class="resume-block-title"><%= award.title %></h3>
+          <span class="highlight resume-block-entity"><%= award.awarder %></span>
+          <p class="resume-block-description"><%= award.summary %></span>
+          <hr class="divide--horizontal"/>
+        </div>
+
+      <% }) %>
+      </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section class="resume-block" id="resume-section-skills">
+      <h2 class="resume-block-heading">Skills</h2>
+      <div class="resume-info--wrapper">
+      <% skills.forEach(skill => { %>
+        <div class="resume-block-info">
+          <h3 class="resume-block-title"><%= skill.name %></h3>
+          <p class="tag-wrapper">
+
+          <% skill.keywords.forEach( keyword => { %>
+            <span class="tag"><%= keyword %></span>
+          <% }) %>
+          <hr class="divide--horizontal"/>
+        </div>
+      <% }); %>
+      </div>
+    </section>
+
+
+  </article><!-- end resume-body -->
+</div><!--end resume-wrapper -->
+<%- include components/contact-form.ejs %>
+<%- include components/scripts.ejs %>
+</body></html>

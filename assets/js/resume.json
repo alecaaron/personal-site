@@ -1,0 +1,101 @@
+{
+  "basics": {
+    "name": "Alec Aaron Alegria",
+    "label": "Product Designer",
+    "picture": "",
+    "email": "hello@alecaaron.com",
+    "phone": "(956) 659 - 9384",
+    "website": "helloalecaron.com",
+    "summary": "As I'm wrapping up my final year at the Art Institute of Austin, I'm looking to join an energetic team to solve complex business problems with customer-centric solutions. I get a kick from playing with my imagination, prototyping delightful experiences, and using a proactive attitude to understand the stories behind problems and their solutions.",
+    "location": {
+      "address": "2800 La Frontera Blvd Apt. 2036",
+      "postalCode": "78681",
+      "city": "Round Rock",
+      "countryCode": "+1",
+      "region": "Texas"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "alecaaron",
+        "url": "github.com/alecaaron"
+      },
+      {
+        "network": "linkedin.com",
+        "username": "",
+        "url": "https://www.linkedin.com/in/alec-alegria-aaba4596/"
+      },
+      {
+        "network": "Behance",
+        "username": "",
+        "url": "https://www.behance.net/alecaaron"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Rgvision Magazine",
+      "position": "Design Intern",
+      "website": "rgvisionmagazine.com",
+      "startDate": "2014",
+      "endDate": "2014",
+      "summary": "My time at RGVision was invested in helping with their bi-monthly publication while maintaining their web presence through social media and email campagins.",
+      "highlights": [
+        "Improved company processes by introducing new technology to help streamline success and collaboration across departments."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Art Institute of Austin",
+      "area": "Austin, Texas",
+      "studyType": "Web & Graphic Design, BFA",
+      "startDate": "2013",
+      "endDate": "2018",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Dean's List",
+      "date": "",
+      "awarder": "Art Institute of Austin",
+      "summary": "Finished the term with GPA 3.9 or higher"
+    },
+    {
+      "title": "Featured Work",
+      "date": "",
+      "awarder": "Art Institute of Austin",
+      "summary": "Class projects have been featured to be displayed for prospective students and as examples for exemplary craftsmanship"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Design",
+      "level": "",
+      "keywords": [
+        "Prototyping, Wireframing, Research, Content Writing, UI Design, Information Architecture"
+      ]
+    },
+    {
+      "name": "Front-End",
+      "level": "",
+      "keywords": [
+        "Javascript, HTML, CSS, SCSS, EJS"
+      ]
+    },
+    {
+      "name": "Back-End",
+      "level": "",
+      "keywords": [
+        "PHP, MySQL, NodeJS, Express"
+      ]
+    }
+  ],
+  "languages": [],
+  "interests": [],
+  "references": []
+}

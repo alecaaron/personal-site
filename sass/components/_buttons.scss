@@ -1,0 +1,80 @@
+@import '../base/colors';
+
+%btn-extend{
+  border-radius: 50px;
+  border: none;
+  color: $color-primary;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  border: 2px solid;
+  padding: .50rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  width: 8em;
+}
+
+.btn-lrg{
+  width: 12em;
+}
+
+@media (max-width: 47em){
+  %btn-extend{
+    font-size: 1rem;
+  }
+}
+
+.btn{
+  $transition: all .15s;
+  &-blue{
+    @extend %btn-extend;
+    background: $color-primary;
+    border-color: $color-primary;
+    color: white;
+    &-outline{
+      @extend .btn-blue;
+      background: inherit;
+      border: 2px solid $color-primary;
+      color: $color-primary;
+      transition: $transition;
+      &:hover{
+        transition: $transition;
+        @extend .btn-blue;
+      }
+    }
+  }
+  &-gold{
+    @extend %btn-extend;
+    background: $color-accent;
+    border-color: $color-accent;
+    color: white;
+    &-outline{
+      @extend .btn-gold;
+      background: none;
+      border: 2px solid $color-accent;
+    }
+  }
+  &-white{
+    @extend %btn-extend;
+    background: white;
+    color: $color-accent;
+    border-color: white;
+    &-outline{
+      background: none;
+      border: 2px solid white;
+    }
+  }
+}
+
+a{
+  text-decoration: none;
+
+  &.link-primary{
+    color: $color-primary;
+  }
+
+  &.link-secondary{
+    color: $color-accent;
+  }
+
+}

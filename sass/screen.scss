@@ -1,0 +1,34 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//Base
+@import "base/normalize";
+@import "base/typography";
+@import "base/colors";
+
+//mixins
+@import "compass/css3/box-shadow";
+
+//components
+@import "components/nav";
+@import "components/buttons";
+@import "components/tags";
+@import "components/contact-form";
+
+//templates
+@import "templates/home";
+@import "templates/resume";
+@import "templates/project";
+
+//independant styles
+.divide{
+  &--vertical{
+    display: inline;
+    margin: 0 .5rem;
+  }
+  &--horizontal{
+    margin: 1.5rem auto;
+  }
+}
