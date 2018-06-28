@@ -7,7 +7,7 @@ const app = express();
       app.use(helmet());
       app.use(compress());
 
-const Port = 1234; // process.env.PORT || 8080;
+const Port = process.env.PORT || 8080;
 
 //set up templating engine
 app.set('views', './views');
