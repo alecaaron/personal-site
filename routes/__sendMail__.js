@@ -1,5 +1,5 @@
 const express = require('express');
-const nodeMailer = require('nodeMailer');
+const nodeMailer = require('nodemailer');
 
 let transport = nodeMailer.createTransport({
   host: 'mail.alecaaron.com',
