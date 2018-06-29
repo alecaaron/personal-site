@@ -2,12 +2,12 @@
 
 %btn-extend{
   border-radius: 50px;
-  border: none;
+  border: 2px solid;
   color: $color-primary;
   cursor: pointer;
   display: inline-block;
+  font-weight: bold;
   font-family: 'Raleway', sans-serif;
-  border: 2px solid;
   padding: .50rem 1.25rem;
   text-align: center;
   text-decoration: none;

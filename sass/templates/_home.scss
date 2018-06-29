@@ -98,9 +98,9 @@
 
 #stories{
   position: relative;
-
   & > div{
     width: 75%;
+    margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -136,7 +136,7 @@
   position: relative;
   vertical-align: top;
 
-  h3{
+  h2{
     color: $color-primary;
     font-family: 'Raleway', sans-serif;
   }
@@ -153,8 +153,10 @@
   background: $color-accent;
   padding-top: 12rem;
   margin-top: -3rem;
-  & > h2{
+  & > h3{
     @extend h1;
+    display: inline-block;
+    margin-left: 20%;
     color: white;
   }
 }
@@ -181,6 +183,11 @@
 @media (max-width: 64.3em){//900px
   .case-studies-group{
     width: 100%;
+  }
+  .intro--divider{
+    h3{
+      margin-left: 2rem;
+    }
   }
 }
 
@@ -212,14 +219,6 @@
         display: block;
         font-style: italic;
         font-weight: lighter;
-        // &:before{
-        //   content: '\2014';
-        //   margin-right: 1rem;
-        // }
-        // &:after{
-        //   content: '\2014';
-        //   margin-left: 1rem;
-        // }
       }
     }
   }//End #intro
@@ -246,39 +245,33 @@
     margin-left:auto;
     margin-right:auto;
     width: 100%;
-    height:20em;
+    height: 20em;
   }
   .case-image{
-    transform: translateY(-8em);
+    // transform: translateY(-8em);
   }
   .case-about{
     width: 100%;
     float:none;
     p, & h2{
-      width: 50%;
+      width: 100%;
     }
     a{
-      position: absolute;
-      right: 0;
-      top:25%;
       margin-top: 1.17em;
     }
   }
 }
 
 @media (max-width: 34.3em){ // 480.1999px
-  .case-about{
-    p, h2{
-      width: 75%;
-    }
-    a{
-      position: relative;
-    }
-  }
   #intro > div {
     margin-left: auto;
     margin-right: auto;
     width: 75%
+  }
+  .case-about{
+    a{
+      position: relative;
+    }
   }
 }
 @media (max-width: 30.71em){
