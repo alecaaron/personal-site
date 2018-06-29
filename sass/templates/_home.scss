@@ -21,7 +21,8 @@
     }
     h2{
       font-family: $aleo;
-      font-weight: normal;
+      font-weight: lighter;
+      font-style: italic;
       font-size: 2em;
 
     }
@@ -209,15 +210,16 @@
     div{
       h2 span{
         display: block;
+        font-style: italic;
         font-weight: lighter;
-        &:before{
-          content: '\2014';
-          margin-right: 1rem;
-        }
-        &:after{
-          content: '\2014';
-          margin-left: 1rem;
-        }
+        // &:before{
+        //   content: '\2014';
+        //   margin-right: 1rem;
+        // }
+        // &:after{
+        //   content: '\2014';
+        //   margin-left: 1rem;
+        // }
       }
     }
   }//End #intro
@@ -230,8 +232,11 @@
 }// end media query
 
 @media(max-width:42.14em){
-  #stories > div{
-    width: 95%;
+  #intro{
+    & > div{
+      width: auto;
+      margin-left: 3em;
+    }
   }
 }
 
@@ -268,6 +273,28 @@
     }
     a{
       position: relative;
+    }
+  }
+  #intro > div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%
+  }
+}
+@media (max-width: 30.71em){
+  #stories > div{
+    width: 95%;
+    & h1, & h2 {
+      background: none;
+    }
+    h1{
+      font-size: 3.3em;
+    }
+    h2{
+      font-size: 1.5em;
+      span{
+        display:inline;
+      }
     }
   }
 }
