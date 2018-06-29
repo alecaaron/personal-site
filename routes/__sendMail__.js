@@ -2,12 +2,12 @@ const express = require('express');
 const nodeMailer = require('nodemailer');
 
 let transport = nodeMailer.createTransport({
-  host: 'mail.alecaaron.com',
+  host: process.env.MAIL_HOST,
   port: 587,
   secure: false,
   auth: {
-    user: "hello@alecaaron.com",
-    pass: "8Characters"
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASS
   },
   tls: {rejectUnauthorized: false}
 });
