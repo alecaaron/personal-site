@@ -16,6 +16,8 @@ module.exports = express.Router()
 
 .post('/', (req,res)=>{
 
+  console.log(req.body);
+
   let mail = {
     from: {
       name: req.body.name,
@@ -27,7 +29,13 @@ module.exports = express.Router()
   }
 
   transport.sendMail(mail, (error, info)=>{
-    if (error) { return console.log(error)};
+    if (error) {
+      return console.log(error)
+    }
+    else{
+      res.send("Message Sent")
+    };
+    
     console.log('Message sent: %s', info.message);
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
   });

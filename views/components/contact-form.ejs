@@ -9,25 +9,25 @@
         <a href="https://www.github.com/alecaaron" class="link-primary">Github</a>
       </div>
     </section>
-  <form action="/sendMail" method="POST">
+  <form id="contact-form" action="sendMail" method="POST">
     <section class="form-wrapper">
       <div class="form-user-info">
 
         <span class="form-field">
           <label for="name">Name</label>
-          <input type="text" name="name" required/>
+          <input id="name" type="text" name="name" required/>
         </span>
 
         <span class="form-field">
           <label for="email">Email</label>
-          <input type="text" name="email" required/>
+          <input id="email" type="email" name="email" required/>
         </span>
 
       </div><!--end user info input-->
 
       <span class="form-field form-user-message">
         <label for="message">Message</label>
-        <textarea placeholder="Write your message" name="message" required></textarea>
+        <textarea id="message" placeholder="Write your message" name="message" required></textarea>
       </span>
     </section>
     <button type="submit" id="form-submit" class="btn-white btn-lrg">Send Message</button>
