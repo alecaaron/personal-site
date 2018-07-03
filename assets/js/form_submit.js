@@ -1,32 +1,21 @@
-
-// let contactForm = {
-//   data: new FormData(), // create new FormData object to submit data with
-//
-//   helmet: function(input){
-//     //sanitize strings
-//     return input
-//   }
-// };
 let form = new FormData();
 
-let user = {
+let user = {//organize user & form data
   name: document.getElementById('name'),
   email: document.getElementById('email'),
   message: document.getElementById('message')
 };
 
-
-
 let submit_btn = document.getElementById('form-submit');
 
 submit_btn.addEventListener('click', e => {
-  e.preventDefault(); // take prevent page submit
+  e.preventDefault(); // prevent page submit
 
-  for (data in user){
+  for (data in user){// sanitize input
     form.append(data, user[data].value);
-  }
+  };
 
-  let init = {
+  let init = { //settings for fetch()--POST request
     method: 'POST',
     body: new URLSearchParams(form),
     headers: {
@@ -36,6 +25,6 @@ submit_btn.addEventListener('click', e => {
 
   fetch('/sendMail', init)
   .then(x =>{
-    console.log(x);
+    //UI interactivity when data is sent
   });
 });
