@@ -646,12 +646,14 @@ h1, .intro--divider > h3, h2, h3, h4 {
 /* line 69, ../sass/components/_buttons.scss */
 a {
   text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
-/* line 72, ../sass/components/_buttons.scss */
+/* line 74, ../sass/components/_buttons.scss */
 a.link-primary {
   color: #404754;
 }
-/* line 76, ../sass/components/_buttons.scss */
+/* line 78, ../sass/components/_buttons.scss */
 a.link-secondary {
   color: #C6986B;
 }
@@ -711,7 +713,6 @@ a.link-secondary {
 }
 /* line 29, ../sass/components/_contact-form.scss */
 .social-media a {
-  font-weight: bold;
   font-size: 1rem;
   padding: .5em;
   color: white;
@@ -719,18 +720,18 @@ a.link-secondary {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 37, ../sass/components/_contact-form.scss */
+/* line 36, ../sass/components/_contact-form.scss */
 .social-media a:hover {
   text-decoration: underline;
 }
 
-/* line 42, ../sass/components/_contact-form.scss */
+/* line 41, ../sass/components/_contact-form.scss */
 form {
   width: 50%;
   display: inline-block;
 }
 
-/* line 49, ../sass/components/_contact-form.scss */
+/* line 48, ../sass/components/_contact-form.scss */
 .form-wrapper {
   display: flex;
   flex: 0 1 auto;
@@ -738,55 +739,55 @@ form {
   justify-content: space-around;
   margin: 0 auto 0 auto;
 }
-/* line 57, ../sass/components/_contact-form.scss */
+/* line 56, ../sass/components/_contact-form.scss */
 .form-wrapper div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: .5rem;
 }
-/* line 67, ../sass/components/_contact-form.scss */
+/* line 66, ../sass/components/_contact-form.scss */
 .form-copy h2 {
   font-size: 2.8rem;
   margin-top: 0;
 }
-/* line 71, ../sass/components/_contact-form.scss */
+/* line 70, ../sass/components/_contact-form.scss */
 .form-copy p {
   width: 75%;
   word-wrap: break-word;
 }
-/* line 78, ../sass/components/_contact-form.scss */
+/* line 77, ../sass/components/_contact-form.scss */
 .form-field {
   display: flex;
   flex: 0 1 auto;
   flex-direction: row;
   margin-bottom: 1.5rem;
 }
-/* line 85, ../sass/components/_contact-form.scss */
+/* line 84, ../sass/components/_contact-form.scss */
 .form-field label, .form-field input {
   border: none;
   border-bottom: 3px white solid;
 }
-/* line 90, ../sass/components/_contact-form.scss */
+/* line 89, ../sass/components/_contact-form.scss */
 .form-field label {
   font-size: 1.3em;
   padding-right: 1.5rem;
 }
-/* line 96, ../sass/components/_contact-form.scss */
+/* line 95, ../sass/components/_contact-form.scss */
 .form-field input {
   background: none;
   outline: none;
 }
-/* line 108, ../sass/components/_contact-form.scss */
+/* line 107, ../sass/components/_contact-form.scss */
 .form-user-info {
   max-width: 18em;
 }
-/* line 112, ../sass/components/_contact-form.scss */
+/* line 111, ../sass/components/_contact-form.scss */
 .form-user-message {
   flex-direction: column;
   max-width: 18em;
 }
-/* line 117, ../sass/components/_contact-form.scss */
+/* line 116, ../sass/components/_contact-form.scss */
 .form-user-message textarea {
   border: none;
   outline: none;
@@ -795,56 +796,56 @@ form {
 }
 
 @media (max-width: 54.3em) {
-  /* line 130, ../sass/components/_contact-form.scss */
+  /* line 129, ../sass/components/_contact-form.scss */
   #contact > div {
     flex-direction: column;
   }
-  /* line 133, ../sass/components/_contact-form.scss */
+  /* line 132, ../sass/components/_contact-form.scss */
   #contact form {
     width: auto;
   }
-  /* line 136, ../sass/components/_contact-form.scss */
+  /* line 135, ../sass/components/_contact-form.scss */
   #contact .social-media {
     display: block;
     margin: 2rem auto 3rem auto;
   }
-  /* line 139, ../sass/components/_contact-form.scss */
+  /* line 138, ../sass/components/_contact-form.scss */
   #contact .social-media a {
     display: inline;
   }
-  /* line 144, ../sass/components/_contact-form.scss */
+  /* line 143, ../sass/components/_contact-form.scss */
   #contact .form-copy h2 {
     text-align: center;
   }
-  /* line 147, ../sass/components/_contact-form.scss */
+  /* line 146, ../sass/components/_contact-form.scss */
   #contact .form-copy p {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 152, ../sass/components/_contact-form.scss */
+  /* line 151, ../sass/components/_contact-form.scss */
   #contact .form-user-info, #contact .form-user-message {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 156, ../sass/components/_contact-form.scss */
+  /* line 155, ../sass/components/_contact-form.scss */
   #contact .form-user-message {
     width: 75%;
   }
-  /* line 159, ../sass/components/_contact-form.scss */
+  /* line 158, ../sass/components/_contact-form.scss */
   #contact button {
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media (max-width: 53.57em) {
-  /* line 168, ../sass/components/_contact-form.scss */
+  /* line 167, ../sass/components/_contact-form.scss */
   .form-wrapper {
     width: auto;
     justify-content: space-between;
   }
 }
 @media (max-width: 42.86em) {
-  /* line 178, ../sass/components/_contact-form.scss */
+  /* line 177, ../sass/components/_contact-form.scss */
   .form-wrapper {
     justify-content: center;
   }

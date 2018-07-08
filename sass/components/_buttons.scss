@@ -68,6 +68,8 @@
 
 a{
   text-decoration: none;
+  font-family: $raleway;
+  font-weight: bold;
 
   &.link-primary{
     color: $color-primary;
