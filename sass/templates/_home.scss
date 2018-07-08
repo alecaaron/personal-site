@@ -201,7 +201,7 @@
     }
     &:nth-of-type(2){
       display:block;
-      margin-left:auto;
+      //margin-left:auto;
       margin-right:auto;
       float:none;
     }
@@ -219,7 +219,7 @@
   #intro{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    //align-items: center;
     div{
       h2 span{
         display: block;
@@ -240,7 +240,20 @@
   #intro{
     & > div{
       width: 87%;
-      margin-left: 3em;
+      // margin-left: 3em;
+      text-align: center;
+      margin-left:auto;
+      margin-right: auto;
+    }
+    .intro-cta {
+      margin-right:auto;
+      margin-left:auto;
+
+      a:nth-of-type(2) {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+      }
     }
   }
 }
