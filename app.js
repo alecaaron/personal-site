@@ -28,8 +28,9 @@ app.use('/resume', Resume);
 const sendMail = require('./routes/__sendMail__');
 app.use('/sendMail', sendMail);
 
-// const Projects = require('./routes/__projects__');
-// app.use('/projects', Projects);
+const getProjects = require('./routes/__projects__');
+app.use('/projects', getProjects);
+
 
 
 app.listen(Port, ()=>{

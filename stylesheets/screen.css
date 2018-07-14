@@ -693,7 +693,7 @@ a.link-secondary {
   padding-top: 5em;
   padding-bottom: 2em;
 }
-/* line 14, ../sass/components/_contact-form.scss */
+/* line 10, ../sass/components/_contact-form.scss */
 #contact > div {
   margin-left: auto;
   margin-right: auto;
@@ -703,7 +703,7 @@ a.link-secondary {
   width: 50%;
 }
 
-/* line 23, ../sass/components/_contact-form.scss */
+/* line 19, ../sass/components/_contact-form.scss */
 .social-media {
   display: inline-block;
   text-align: center;
@@ -711,7 +711,7 @@ a.link-secondary {
   margin: 0;
   width: auto;
 }
-/* line 29, ../sass/components/_contact-form.scss */
+/* line 25, ../sass/components/_contact-form.scss */
 .social-media a {
   font-size: 1rem;
   padding: .5em;
@@ -720,18 +720,18 @@ a.link-secondary {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 36, ../sass/components/_contact-form.scss */
+/* line 32, ../sass/components/_contact-form.scss */
 .social-media a:hover {
   text-decoration: underline;
 }
 
-/* line 41, ../sass/components/_contact-form.scss */
+/* line 37, ../sass/components/_contact-form.scss */
 form {
   width: 50%;
   display: inline-block;
 }
 
-/* line 48, ../sass/components/_contact-form.scss */
+/* line 44, ../sass/components/_contact-form.scss */
 .form-wrapper {
   display: flex;
   flex: 0 1 auto;
@@ -739,55 +739,55 @@ form {
   justify-content: space-around;
   margin: 0 auto 0 auto;
 }
-/* line 56, ../sass/components/_contact-form.scss */
+/* line 52, ../sass/components/_contact-form.scss */
 .form-wrapper div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: .5rem;
 }
-/* line 66, ../sass/components/_contact-form.scss */
+/* line 62, ../sass/components/_contact-form.scss */
 .form-copy h2 {
   font-size: 2.8rem;
   margin-top: 0;
 }
-/* line 70, ../sass/components/_contact-form.scss */
+/* line 66, ../sass/components/_contact-form.scss */
 .form-copy p {
   width: 75%;
   word-wrap: break-word;
 }
-/* line 77, ../sass/components/_contact-form.scss */
+/* line 73, ../sass/components/_contact-form.scss */
 .form-field {
   display: flex;
   flex: 0 1 auto;
   flex-direction: row;
   margin-bottom: 1.5rem;
 }
-/* line 84, ../sass/components/_contact-form.scss */
+/* line 80, ../sass/components/_contact-form.scss */
 .form-field label, .form-field input {
   border: none;
   border-bottom: 3px white solid;
 }
-/* line 89, ../sass/components/_contact-form.scss */
+/* line 85, ../sass/components/_contact-form.scss */
 .form-field label {
   font-size: 1.3em;
   padding-right: 1.5rem;
 }
-/* line 95, ../sass/components/_contact-form.scss */
+/* line 91, ../sass/components/_contact-form.scss */
 .form-field input {
   background: none;
   outline: none;
 }
-/* line 107, ../sass/components/_contact-form.scss */
+/* line 103, ../sass/components/_contact-form.scss */
 .form-user-info {
   max-width: 18em;
 }
-/* line 111, ../sass/components/_contact-form.scss */
+/* line 107, ../sass/components/_contact-form.scss */
 .form-user-message {
   flex-direction: column;
   max-width: 18em;
 }
-/* line 116, ../sass/components/_contact-form.scss */
+/* line 112, ../sass/components/_contact-form.scss */
 .form-user-message textarea {
   border: none;
   outline: none;
@@ -796,56 +796,56 @@ form {
 }
 
 @media (max-width: 54.3em) {
-  /* line 129, ../sass/components/_contact-form.scss */
+  /* line 125, ../sass/components/_contact-form.scss */
   #contact > div {
     flex-direction: column;
   }
-  /* line 132, ../sass/components/_contact-form.scss */
+  /* line 128, ../sass/components/_contact-form.scss */
   #contact form {
     width: auto;
   }
-  /* line 135, ../sass/components/_contact-form.scss */
+  /* line 131, ../sass/components/_contact-form.scss */
   #contact .social-media {
     display: block;
     margin: 2rem auto 3rem auto;
   }
-  /* line 138, ../sass/components/_contact-form.scss */
+  /* line 134, ../sass/components/_contact-form.scss */
   #contact .social-media a {
     display: inline;
   }
-  /* line 143, ../sass/components/_contact-form.scss */
+  /* line 139, ../sass/components/_contact-form.scss */
   #contact .form-copy h2 {
     text-align: center;
   }
-  /* line 146, ../sass/components/_contact-form.scss */
+  /* line 142, ../sass/components/_contact-form.scss */
   #contact .form-copy p {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 151, ../sass/components/_contact-form.scss */
+  /* line 147, ../sass/components/_contact-form.scss */
   #contact .form-user-info, #contact .form-user-message {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 155, ../sass/components/_contact-form.scss */
+  /* line 151, ../sass/components/_contact-form.scss */
   #contact .form-user-message {
     width: 75%;
   }
-  /* line 158, ../sass/components/_contact-form.scss */
+  /* line 154, ../sass/components/_contact-form.scss */
   #contact button {
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media (max-width: 53.57em) {
-  /* line 167, ../sass/components/_contact-form.scss */
+  /* line 163, ../sass/components/_contact-form.scss */
   .form-wrapper {
     width: auto;
     justify-content: space-between;
   }
 }
 @media (max-width: 42.86em) {
-  /* line 177, ../sass/components/_contact-form.scss */
+  /* line 173, ../sass/components/_contact-form.scss */
   .form-wrapper {
     justify-content: center;
   }
