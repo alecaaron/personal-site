@@ -7,7 +7,7 @@
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
-  font-family: 'Raleway', sans-serif;
+  font-family: $san_serif;
   padding: .50rem 1.25rem;
   text-align: center;
   text-decoration: none;
@@ -26,20 +26,20 @@
 
 .btn{
   $transition: all .15s;
-  &-blue{
+  &-primary{
     @extend %btn-extend;
-    background: $color-primary;
-    border-color: $color-primary;
+    background: $color-primary-light;
+    border-color: $color-primary-light;
     color: white;
     &-outline{
-      @extend .btn-blue;
+      @extend .btn-primary;
       background: inherit;
-      border: 2px solid $color-primary;
-      color: $color-primary;
+      border: 2px solid $color-primary-light;
+      color: $color-primary-light;
       transition: $transition;
       &:hover{
         transition: $transition;
-        @extend .btn-blue;
+        @extend .btn-primary;
       }
     }
   }
@@ -57,7 +57,7 @@
   &-white{
     @extend %btn-extend;
     background: white;
-    color: $color-accent;
+    color: $color-primary;
     border-color: white;
     &-outline{
       background: none;
@@ -68,7 +68,7 @@
 
 a{
   text-decoration: none;
-  font-family: $raleway;
+  font-family: $san_serif;
   font-weight: bold;
 
   &.link-primary{

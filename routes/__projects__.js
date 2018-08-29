@@ -10,7 +10,7 @@ module.exports = app.Router()
     page: 1,
     page_size: 10
   })
-  .then(resp =>{
+  .then(resp => {
     console.log(resp.data);
   })
 

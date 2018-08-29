@@ -1,37 +1,35 @@
 #intro{
-  background-image: url('/public/img/index-bg.png');
+  background-image: url('/public/img/test.png');
   background-size: cover;
-  height: 33em;
+  background-position:center;
+  height: 45rem;
   padding-top: 3.8em;
-  @include single-box-shadow(0, -69px, 83px, -50px, rgba($color-primary, 0.9), inset);
 
   & > div{
-    color: white;
+    color: $color-primary-light;
     margin-left: 10%;
-    width: 33em;
-    h1,h2{
+    h1, h2{
       display: inline-block;
-      //background-color: $color-primary;
-      padding-left: 1.5rem;
-      padding-right: 1.25rem;
     }
-    h1{
-      margin-bottom: 0;
-      font-size: 3.8em;
 
-    }
-    h2{
-      font-family: $aleo;
-      font-weight: lighter;
-      font-style: italic;
-      font-size: 2em;
-
-    }
   }
+}
+.header-title{
+  margin-bottom: 0;
+  font-size: 4.2rem;
+  font-weight: lighter;
+  color: white;
+  display: inline-block;
+
+}
+.subheader{
+  font-size: 2.5rem;
+  margin-top: 0;
+
 }
 
 .intro-cta{
-  width: 80%;
+  width: 27rem;
   margin-right: auto;
 
   a{
@@ -48,18 +46,16 @@
 }
 
 #work{
-  background: $color-primary;
-  height: auto;
-  @include single-box-shadow(0px, -80px, 80px, 100px, rgba($color-primary, 0.9), false);
+  //height: auto;
 }
 
 .work-sample-group{
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   flex: 0 1 auto;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 85%;
+  margin: -15rem auto 5rem auto;
   position: relative;
   text-align: center;
   z-index: 3;
@@ -67,10 +63,7 @@
 
 //place-holder class to keep it 'DRY'
 %work-sample{
-  display: inline;
-  height: 20em;
-  background: white;
-  overflow: hidden;
+  //background: white;
   &>img{
     position: relative;
     width: 100%;
@@ -79,17 +72,18 @@
 
 .work-sample-large{
   @extend %work-sample;
-  flex-basis: 50%;
-  position: static;
-  width: 45%;
-  max-width:69.69em;
+  display:block;
+  width:100%;
+  margin: 0 auto 0 auto;
+  //max-width:69.69em;
 }
 
 .work-sample-small{
   @extend %work-sample;
-  flex-basis: 25%;
-  margin: 0 auto 0 auto;
-  width: 23%;
+  display:inline-block;
+  flex-basis: 50%;
+  width: 50%;
+  height: auto;
   img{
     // width: auto;
     // height: 100%;
@@ -97,10 +91,15 @@
 }
 
 #stories{
-  position: relative;
+  //position: relative;
+  padding-top: 3rem;
+  background-color: $color-accent;
   & > div{
+    h2{
+      margin-bottom: 5rem;
+      color: white;
+    }
     width: 75%;
-    margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -136,9 +135,8 @@
   position: relative;
   vertical-align: top;
 
-  h2{
-    color: $color-primary;
-    font-family: 'Raleway', sans-serif;
+  h3{
+
   }
   p{
     color: black;
@@ -146,18 +144,6 @@
   }
   button{
     align-self: flex-end;
-  }
-}
-
-.intro--divider{
-  background: $color-accent;
-  padding-top: 12rem;
-  margin-top: -3rem;
-  & > h3{
-    @extend h1;
-    display: inline-block;
-    margin-left: 20%;
-    color: white;
   }
 }
 
@@ -207,6 +193,7 @@
     }
   }
 
+
   #stories > div{
     width: 85%;
   }
@@ -240,7 +227,6 @@
   #intro{
     & > div{
       width: 87%;
-      // margin-left: 3em;
       text-align: center;
       margin-left:auto;
       margin-right: auto;
@@ -248,6 +234,7 @@
     .intro-cta {
       margin-right:auto;
       margin-left:auto;
+      text-align: center;
 
       a:nth-of-type(2) {
         display:block;
@@ -255,6 +242,12 @@
         margin-right:auto;
       }
     }
+  }
+  .work-sample-small, .work-sample-large{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex-basis: 100%;
   }
 }
 

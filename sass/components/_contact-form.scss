@@ -1,12 +1,11 @@
 @import "../base/colors";
 
 #contact{ //whole contact footer section
-  background: $color-accent;
-  color: white;
+  background: $color-accent-light;
   height: auto;
   padding-top: 5em;
   padding-bottom: 2em;
-  
+
   & > div{
     margin-left: auto;
     margin-right: auto;
@@ -23,10 +22,10 @@
   margin: 0;
   width: auto;
   a{
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding: .5em;
-    color: white;
-    display:block;
+    color: $color-primary;
+    display:inline-block;
     margin-left: auto;
     margin-right: auto;
     &:hover{
@@ -46,7 +45,6 @@ form{
     flex: 0 1 auto;
     flex-direction: column;
     justify-content: space-around;
-    //width: 75%;
     margin: 0 auto 0 auto;
 
     div{
@@ -54,10 +52,9 @@ form{
       flex-direction: column;
       justify-content: space-between;
       margin-bottom: .5rem;
-
     }
-
   }
+
   &-copy{
     h2{
       font-size: 2.8rem;
@@ -67,7 +64,6 @@ form{
       width: 75%;
       word-wrap: break-word;
     }
-
   }
 
   &-field{
@@ -87,13 +83,11 @@ form{
       font-size: 1.3em;
       padding-right: 1.5rem;
     }
-
     input{
       @extend %equal-border;
       background: none;
       outline: none;
     }
-
   }
 
   &-user{
@@ -118,6 +112,14 @@ form{
 
     }
 
+  }
+}
+
+@media (max-width: 89.3rem){
+  .social-media{
+    a{
+      display: block;
+    }
   }
 }
 @media (max-width: 54.3em){
@@ -149,7 +151,7 @@ form{
       margin-right: auto;
     }
     .form-user-message{
-      width: 75%;
+      width: 100%;
     }
     button{
       margin-left:auto;
@@ -161,7 +163,7 @@ form{
   .form{
 
     &-wrapper{
-      width: auto;
+      width: 100%;
       justify-content: space-between;
     }
   }

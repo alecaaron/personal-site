@@ -68,7 +68,7 @@ $move-down: 2rem;
   min-width: 26.25rem;
 
   &:first-child{
-    background-color: $color-primary;
+    background-color: $color-accent;
     display:block;
     color: white;
     h2{
@@ -92,7 +92,7 @@ $move-down: 2rem;
   //Child atoms
   &-heading{
 
-    background: $color-primary;
+    background: $color-accent;
     text-align: center;
     clear: right;
     color: $color-accent;

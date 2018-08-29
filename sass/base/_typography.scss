@@ -1,34 +1,18 @@
 // define custom font
-$aleo: "Aleo", serif;
-$raleway: "Raleway", sans-serif;
 
-@font-face{
-  font-family: "Aleo";
-  font-weight: normal;
-  src: url("/public/aleo/Webfont/Regular/aleo-regular-webfont.woff");
-}
-@font-face{
-  font-family: "Aleo";
-  font-weight: normal;
-  font-style: italic;
-  src: url("/public/aleo/Webfont/Regular Italic/aleo-italic-webfont.woff");
-}
-@font-face{
-  font-family: "Aleo";
-  font-weight: bold;
-  src: url("/public/aleo/Webfont/Bold/aleo-bold-webfont.woff");
-}
+$serif: "Merriweather", serif;
+$san_serif: "Montserrat", sans-serif;
 
 //set font-family
 html{
 font-size: 14px;
-font-family: $aleo;
+font-family: $san_serif;
 font-weight: normal;
 line-height: 1.6;
 }
 
 h1,h2,h3,h4{
-  font-family: $raleway
+  font-family: $serif;
 }
 
 

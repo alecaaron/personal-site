@@ -25,12 +25,13 @@ app.use('/', Home);
 const Resume = require('./routes/__resume__');
 app.use('/resume', Resume);
 
+//send mail
 const sendMail = require('./routes/__sendMail__');
 app.use('/sendMail', sendMail);
 
+//projects pages
 const getProjects = require('./routes/__projects__');
 app.use('/projects', getProjects);
-
 
 
 app.listen(Port, ()=>{

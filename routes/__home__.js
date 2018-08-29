@@ -7,7 +7,16 @@ let app = require('express');
 // gather that data into array of objects.
 // an object per project
 
-// code here
+// // code here
+// for(let i=1; i<8; i++){
+//   if (i%3 == 0){
+//     //add class for larger photos
+//     // on every 3rd project
+//   }
+//   else{
+//     //add class for squar photos
+//   }
+// }
 
 
 // handle and export routes

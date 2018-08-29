@@ -48,7 +48,7 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 /* line 47, ../sass/base/_normalize.scss */
-h1, .intro--divider > h3 {
+h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -479,46 +479,30 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "Aleo";
-  font-weight: normal;
-  src: url("/public/aleo/Webfont/Regular/aleo-regular-webfont.woff");
-}
-@font-face {
-  font-family: "Aleo";
-  font-weight: normal;
-  font-style: italic;
-  src: url("/public/aleo/Webfont/Regular Italic/aleo-italic-webfont.woff");
-}
-@font-face {
-  font-family: "Aleo";
-  font-weight: bold;
-  src: url("/public/aleo/Webfont/Bold/aleo-bold-webfont.woff");
-}
-/* line 23, ../sass/base/_typography.scss */
+/* line 7, ../sass/base/_typography.scss */
 html {
   font-size: 14px;
-  font-family: "Aleo", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   line-height: 1.6;
 }
 
-/* line 30, ../sass/base/_typography.scss */
-h1, .intro--divider > h3, h2, h3, h4 {
-  font-family: "Raleway", sans-serif;
+/* line 14, ../sass/base/_typography.scss */
+h1, h2, h3, h4 {
+  font-family: "Merriweather", serif;
 }
 
 /* line 1, ../sass/components/_nav.scss */
 .nav-wrapper {
   height: 69px;
   width: 100%;
-  background-color: #404754;
+  background-color: #336667;
 }
 
 /* line 7, ../sass/components/_nav.scss */
 #nav-bar {
   height: auto;
-  background: #404754;
+  background: #336667;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -563,7 +547,7 @@ h1, .intro--divider > h3, h2, h3, h4 {
 }
 /* line 44, ../sass/components/_nav.scss */
 .main-nav--a:hover {
-  border-bottom: 3px solid #C6986B;
+  border-bottom: 3px solid #d6a470;
 }
 
 @media screen and (max-width: 700px) {
@@ -578,14 +562,14 @@ h1, .intro--divider > h3, h2, h3, h4 {
   }
 }
 /* line 3, ../sass/components/_buttons.scss */
-.btn-blue, .btn-blue-outline, .btn-blue-outline:hover, .btn-gold, .btn-gold-outline, .btn-white {
+.btn-primary, .btn-primary-outline, .btn-primary-outline:hover, .btn-gold, .btn-gold-outline, .btn-white {
   border-radius: 50px;
   border: 2px solid;
-  color: #404754;
+  color: #336667;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: .50rem 1.25rem;
   text-align: center;
   text-decoration: none;
@@ -599,42 +583,42 @@ h1, .intro--divider > h3, h2, h3, h4 {
 
 @media (max-width: 47em) {
   /* line 22, ../sass/components/_buttons.scss */
-  .btn-blue, .btn-blue-outline, .btn-blue-outline:hover, .btn-gold, .btn-gold-outline, .btn-white {
+  .btn-primary, .btn-primary-outline, .btn-primary-outline:hover, .btn-gold, .btn-gold-outline, .btn-white {
     font-size: 1rem;
   }
 }
 /* line 29, ../sass/components/_buttons.scss */
-.btn-blue, .btn-blue-outline, .btn-blue-outline:hover {
-  background: #404754;
-  border-color: #404754;
+.btn-primary, .btn-primary-outline, .btn-primary-outline:hover {
+  background: #6E98AE;
+  border-color: #6E98AE;
   color: white;
 }
 /* line 34, ../sass/components/_buttons.scss */
-.btn-blue-outline {
+.btn-primary-outline {
   background: inherit;
-  border: 2px solid #404754;
-  color: #404754;
+  border: 2px solid #6E98AE;
+  color: #6E98AE;
   transition: all 0.15s;
 }
 /* line 40, ../sass/components/_buttons.scss */
-.btn-blue-outline:hover {
+.btn-primary-outline:hover {
   transition: all 0.15s;
 }
 /* line 46, ../sass/components/_buttons.scss */
 .btn-gold, .btn-gold-outline {
-  background: #C6986B;
-  border-color: #C6986B;
+  background: #d6a470;
+  border-color: #d6a470;
   color: white;
 }
 /* line 51, ../sass/components/_buttons.scss */
 .btn-gold-outline {
   background: none;
-  border: 2px solid #C6986B;
+  border: 2px solid #d6a470;
 }
 /* line 57, ../sass/components/_buttons.scss */
 .btn-white {
   background: white;
-  color: #C6986B;
+  color: #336667;
   border-color: white;
 }
 /* line 62, ../sass/components/_buttons.scss */
@@ -646,16 +630,16 @@ h1, .intro--divider > h3, h2, h3, h4 {
 /* line 69, ../sass/components/_buttons.scss */
 a {
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 /* line 74, ../sass/components/_buttons.scss */
 a.link-primary {
-  color: #404754;
+  color: #336667;
 }
 /* line 78, ../sass/components/_buttons.scss */
 a.link-secondary {
-  color: #C6986B;
+  color: #d6a470;
 }
 
 /* line 1, ../sass/components/_tags.scss */
@@ -687,13 +671,12 @@ a.link-secondary {
 }
 /* line 3, ../sass/components/_contact-form.scss */
 #contact {
-  background: #C6986B;
-  color: white;
+  background: #E5C4A1;
   height: auto;
   padding-top: 5em;
   padding-bottom: 2em;
 }
-/* line 10, ../sass/components/_contact-form.scss */
+/* line 9, ../sass/components/_contact-form.scss */
 #contact > div {
   margin-left: auto;
   margin-right: auto;
@@ -703,7 +686,7 @@ a.link-secondary {
   width: 50%;
 }
 
-/* line 19, ../sass/components/_contact-form.scss */
+/* line 18, ../sass/components/_contact-form.scss */
 .social-media {
   display: inline-block;
   text-align: center;
@@ -711,27 +694,27 @@ a.link-secondary {
   margin: 0;
   width: auto;
 }
-/* line 25, ../sass/components/_contact-form.scss */
+/* line 24, ../sass/components/_contact-form.scss */
 .social-media a {
-  font-size: 1rem;
+  font-size: 1.25rem;
   padding: .5em;
-  color: white;
-  display: block;
+  color: #336667;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 32, ../sass/components/_contact-form.scss */
+/* line 31, ../sass/components/_contact-form.scss */
 .social-media a:hover {
   text-decoration: underline;
 }
 
-/* line 37, ../sass/components/_contact-form.scss */
+/* line 36, ../sass/components/_contact-form.scss */
 form {
   width: 50%;
   display: inline-block;
 }
 
-/* line 44, ../sass/components/_contact-form.scss */
+/* line 43, ../sass/components/_contact-form.scss */
 .form-wrapper {
   display: flex;
   flex: 0 1 auto;
@@ -739,55 +722,55 @@ form {
   justify-content: space-around;
   margin: 0 auto 0 auto;
 }
-/* line 52, ../sass/components/_contact-form.scss */
+/* line 50, ../sass/components/_contact-form.scss */
 .form-wrapper div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: .5rem;
 }
-/* line 62, ../sass/components/_contact-form.scss */
+/* line 59, ../sass/components/_contact-form.scss */
 .form-copy h2 {
   font-size: 2.8rem;
   margin-top: 0;
 }
-/* line 66, ../sass/components/_contact-form.scss */
+/* line 63, ../sass/components/_contact-form.scss */
 .form-copy p {
   width: 75%;
   word-wrap: break-word;
 }
-/* line 73, ../sass/components/_contact-form.scss */
+/* line 69, ../sass/components/_contact-form.scss */
 .form-field {
   display: flex;
   flex: 0 1 auto;
   flex-direction: row;
   margin-bottom: 1.5rem;
 }
-/* line 80, ../sass/components/_contact-form.scss */
+/* line 76, ../sass/components/_contact-form.scss */
 .form-field label, .form-field input {
   border: none;
   border-bottom: 3px white solid;
 }
-/* line 85, ../sass/components/_contact-form.scss */
+/* line 81, ../sass/components/_contact-form.scss */
 .form-field label {
   font-size: 1.3em;
   padding-right: 1.5rem;
 }
-/* line 91, ../sass/components/_contact-form.scss */
+/* line 86, ../sass/components/_contact-form.scss */
 .form-field input {
   background: none;
   outline: none;
 }
-/* line 103, ../sass/components/_contact-form.scss */
+/* line 97, ../sass/components/_contact-form.scss */
 .form-user-info {
   max-width: 18em;
 }
-/* line 107, ../sass/components/_contact-form.scss */
+/* line 101, ../sass/components/_contact-form.scss */
 .form-user-message {
   flex-direction: column;
   max-width: 18em;
 }
-/* line 112, ../sass/components/_contact-form.scss */
+/* line 106, ../sass/components/_contact-form.scss */
 .form-user-message textarea {
   border: none;
   outline: none;
@@ -795,178 +778,171 @@ form {
   width: 100%;
 }
 
+@media (max-width: 89.3rem) {
+  /* line 120, ../sass/components/_contact-form.scss */
+  .social-media a {
+    display: block;
+  }
+}
 @media (max-width: 54.3em) {
-  /* line 125, ../sass/components/_contact-form.scss */
+  /* line 127, ../sass/components/_contact-form.scss */
   #contact > div {
     flex-direction: column;
   }
-  /* line 128, ../sass/components/_contact-form.scss */
+  /* line 130, ../sass/components/_contact-form.scss */
   #contact form {
     width: auto;
   }
-  /* line 131, ../sass/components/_contact-form.scss */
+  /* line 133, ../sass/components/_contact-form.scss */
   #contact .social-media {
     display: block;
     margin: 2rem auto 3rem auto;
   }
-  /* line 134, ../sass/components/_contact-form.scss */
+  /* line 136, ../sass/components/_contact-form.scss */
   #contact .social-media a {
     display: inline;
   }
-  /* line 139, ../sass/components/_contact-form.scss */
+  /* line 141, ../sass/components/_contact-form.scss */
   #contact .form-copy h2 {
     text-align: center;
   }
-  /* line 142, ../sass/components/_contact-form.scss */
+  /* line 144, ../sass/components/_contact-form.scss */
   #contact .form-copy p {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 147, ../sass/components/_contact-form.scss */
+  /* line 149, ../sass/components/_contact-form.scss */
   #contact .form-user-info, #contact .form-user-message {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 151, ../sass/components/_contact-form.scss */
+  /* line 153, ../sass/components/_contact-form.scss */
   #contact .form-user-message {
-    width: 75%;
+    width: 100%;
   }
-  /* line 154, ../sass/components/_contact-form.scss */
+  /* line 156, ../sass/components/_contact-form.scss */
   #contact button {
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media (max-width: 53.57em) {
-  /* line 163, ../sass/components/_contact-form.scss */
+  /* line 165, ../sass/components/_contact-form.scss */
   .form-wrapper {
-    width: auto;
+    width: 100%;
     justify-content: space-between;
   }
 }
 @media (max-width: 42.86em) {
-  /* line 173, ../sass/components/_contact-form.scss */
+  /* line 175, ../sass/components/_contact-form.scss */
   .form-wrapper {
     justify-content: center;
   }
 }
 /* line 1, ../sass/templates/_home.scss */
 #intro {
-  background-image: url("/public/img/index-bg.png");
+  background-image: url("/public/img/test.png");
   background-size: cover;
-  height: 33em;
+  background-position: center;
+  height: 45rem;
   padding-top: 3.8em;
-  -moz-box-shadow: inset 0 -69px 83px -50px rgba(64, 71, 84, 0.9);
-  -webkit-box-shadow: inset 0 -69px 83px -50px rgba(64, 71, 84, 0.9);
-  box-shadow: inset 0 -69px 83px -50px rgba(64, 71, 84, 0.9);
 }
 /* line 8, ../sass/templates/_home.scss */
 #intro > div {
-  color: white;
+  color: #6E98AE;
   margin-left: 10%;
-  width: 33em;
 }
-/* line 12, ../sass/templates/_home.scss */
-#intro > div h1, #intro > div .intro--divider > h3, #intro > div h2 {
+/* line 11, ../sass/templates/_home.scss */
+#intro > div h1, #intro > div h2 {
   display: inline-block;
-  padding-left: 1.5rem;
-  padding-right: 1.25rem;
-}
-/* line 18, ../sass/templates/_home.scss */
-#intro > div h1, #intro > div .intro--divider > h3 {
-  margin-bottom: 0;
-  font-size: 3.8em;
-}
-/* line 23, ../sass/templates/_home.scss */
-#intro > div h2 {
-  font-family: "Aleo", serif;
-  font-weight: lighter;
-  font-style: italic;
-  font-size: 2em;
 }
 
-/* line 33, ../sass/templates/_home.scss */
+/* line 17, ../sass/templates/_home.scss */
+.header-title {
+  margin-bottom: 0;
+  font-size: 4.2rem;
+  font-weight: lighter;
+  color: white;
+  display: inline-block;
+}
+
+/* line 25, ../sass/templates/_home.scss */
+.subheader {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+/* line 31, ../sass/templates/_home.scss */
 .intro-cta {
-  width: 80%;
+  width: 27rem;
   margin-right: auto;
 }
-/* line 37, ../sass/templates/_home.scss */
+/* line 35, ../sass/templates/_home.scss */
 .intro-cta a {
   margin-left: 1em;
   margin-right: 1em;
 }
-/* line 41, ../sass/templates/_home.scss */
+/* line 39, ../sass/templates/_home.scss */
 .intro-cta a:first-child {
   float: left;
 }
-/* line 44, ../sass/templates/_home.scss */
+/* line 42, ../sass/templates/_home.scss */
 .intro-cta a:nth-of-type(2) {
   float: right;
 }
 
-/* line 50, ../sass/templates/_home.scss */
-#work {
-  background: #404754;
-  height: auto;
-  -moz-box-shadow: 0px -80px 80px 100px rgba(64, 71, 84, 0.9);
-  -webkit-box-shadow: 0px -80px 80px 100px rgba(64, 71, 84, 0.9);
-  box-shadow: 0px -80px 80px 100px rgba(64, 71, 84, 0.9);
-}
-
-/* line 56, ../sass/templates/_home.scss */
+/* line 52, ../sass/templates/_home.scss */
 .work-sample-group {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   flex: 0 1 auto;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 85%;
+  margin: -15rem auto 5rem auto;
   position: relative;
   text-align: center;
   z-index: 3;
 }
 
-/* line 69, ../sass/templates/_home.scss */
-.work-sample-large, .work-sample-small {
-  display: inline;
-  height: 20em;
-  background: white;
-  overflow: hidden;
-}
-/* line 74, ../sass/templates/_home.scss */
+/* line 67, ../sass/templates/_home.scss */
 .work-sample-large > img, .work-sample-small > img {
   position: relative;
   width: 100%;
 }
 
-/* line 80, ../sass/templates/_home.scss */
+/* line 73, ../sass/templates/_home.scss */
 .work-sample-large {
-  flex-basis: 50%;
-  position: static;
-  width: 45%;
-  max-width: 69.69em;
-}
-
-/* line 88, ../sass/templates/_home.scss */
-.work-sample-small {
-  flex-basis: 25%;
+  display: block;
+  width: 100%;
   margin: 0 auto 0 auto;
-  width: 23%;
 }
 
-/* line 99, ../sass/templates/_home.scss */
-#stories {
-  position: relative;
+/* line 81, ../sass/templates/_home.scss */
+.work-sample-small {
+  display: inline-block;
+  flex-basis: 50%;
+  width: 50%;
+  height: auto;
 }
-/* line 101, ../sass/templates/_home.scss */
+
+/* line 93, ../sass/templates/_home.scss */
+#stories {
+  padding-top: 3rem;
+  background-color: #d6a470;
+}
+/* line 97, ../sass/templates/_home.scss */
 #stories > div {
   width: 75%;
-  margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
 }
+/* line 98, ../sass/templates/_home.scss */
+#stories > div h2 {
+  margin-bottom: 5rem;
+  color: white;
+}
 
-/* line 108, ../sass/templates/_home.scss */
+/* line 107, ../sass/templates/_home.scss */
 .case-studies-group {
   padding-bottom: 5em;
   margin-left: auto;
@@ -974,30 +950,30 @@ form {
   width: 65%;
 }
 
-/* line 114, ../sass/templates/_home.scss */
+/* line 113, ../sass/templates/_home.scss */
 .case-study {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 119, ../sass/templates/_home.scss */
+/* line 118, ../sass/templates/_home.scss */
 .case-image-wrap {
   display: inline;
   width: 18em;
   overflow: hidden;
 }
 
-/* line 124, ../sass/templates/_home.scss */
+/* line 123, ../sass/templates/_home.scss */
 .case-image {
   width: inherit;
 }
-/* line 126, ../sass/templates/_home.scss */
+/* line 125, ../sass/templates/_home.scss */
 .case-image:hover {
   transform: scale(500px);
 }
 
-/* line 130, ../sass/templates/_home.scss */
+/* line 129, ../sass/templates/_home.scss */
 .case-about {
   float: right;
   display: inline-block;
@@ -1006,133 +982,124 @@ form {
   position: relative;
   vertical-align: top;
 }
-/* line 139, ../sass/templates/_home.scss */
-.case-about h2 {
-  color: #404754;
-  font-family: 'Raleway', sans-serif;
-}
-/* line 143, ../sass/templates/_home.scss */
+/* line 141, ../sass/templates/_home.scss */
 .case-about p {
   color: black;
   position: relative;
 }
-/* line 147, ../sass/templates/_home.scss */
+/* line 145, ../sass/templates/_home.scss */
 .case-about button {
   align-self: flex-end;
 }
 
-/* line 152, ../sass/templates/_home.scss */
-.intro--divider {
-  background: #C6986B;
-  padding-top: 12rem;
-  margin-top: -3rem;
-}
-/* line 156, ../sass/templates/_home.scss */
-.intro--divider > h3 {
-  display: inline-block;
-  margin-left: 20%;
-  color: white;
-}
-
 @media (max-width: 1100px) {
-  /* line 169, ../sass/templates/_home.scss */
+  /* line 155, ../sass/templates/_home.scss */
   .work-sample-group {
     width: 85%;
   }
 
-  /* line 172, ../sass/templates/_home.scss */
+  /* line 158, ../sass/templates/_home.scss */
   .work-sample-large, .work-sample-small {
     height: 100%;
   }
 
-  /* line 175, ../sass/templates/_home.scss */
+  /* line 161, ../sass/templates/_home.scss */
   .work-sample-large {
     flex-basis: 100%;
   }
 
-  /* line 178, ../sass/templates/_home.scss */
+  /* line 164, ../sass/templates/_home.scss */
   .work-sample-small {
     flex-basis: 50%;
   }
 
-  /* line 181, ../sass/templates/_home.scss */
+  /* line 167, ../sass/templates/_home.scss */
   .case-studies-group {
     width: 70%;
   }
 }
 @media (max-width: 64.3em) {
-  /* line 187, ../sass/templates/_home.scss */
+  /* line 173, ../sass/templates/_home.scss */
   .case-studies-group {
     width: 100%;
   }
 
-  /* line 191, ../sass/templates/_home.scss */
+  /* line 177, ../sass/templates/_home.scss */
   .intro--divider h3 {
     margin-left: 2rem;
   }
 }
 @media (max-width: 49.29em) {
-  /* line 199, ../sass/templates/_home.scss */
+  /* line 185, ../sass/templates/_home.scss */
   .intro-cta a:nth-of-type(1) {
     display: none;
   }
-  /* line 202, ../sass/templates/_home.scss */
+  /* line 188, ../sass/templates/_home.scss */
   .intro-cta a:nth-of-type(2) {
     display: block;
     margin-right: auto;
     float: none;
   }
 
-  /* line 210, ../sass/templates/_home.scss */
+  /* line 197, ../sass/templates/_home.scss */
   #stories > div {
     width: 85%;
   }
 }
 @media (max-width: 47em) {
-  /* line 219, ../sass/templates/_home.scss */
+  /* line 206, ../sass/templates/_home.scss */
   #intro {
     display: flex;
     flex-direction: column;
   }
-  /* line 224, ../sass/templates/_home.scss */
+  /* line 211, ../sass/templates/_home.scss */
   #intro div h2 span {
     display: block;
     font-style: italic;
     font-weight: lighter;
   }
 
-  /* line 231, ../sass/templates/_home.scss */
+  /* line 218, ../sass/templates/_home.scss */
   .work-sample-group {
     width: 90%;
   }
 
-  /* line 234, ../sass/templates/_home.scss */
+  /* line 221, ../sass/templates/_home.scss */
   .case-image-wrap {
     width: 45%;
   }
 }
 @media (max-width: 42.14em) {
-  /* line 241, ../sass/templates/_home.scss */
+  /* line 228, ../sass/templates/_home.scss */
   #intro > div {
     width: 87%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 248, ../sass/templates/_home.scss */
+  /* line 234, ../sass/templates/_home.scss */
   #intro .intro-cta {
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
   }
-  /* line 252, ../sass/templates/_home.scss */
+  /* line 239, ../sass/templates/_home.scss */
   #intro .intro-cta a:nth-of-type(2) {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* line 246, ../sass/templates/_home.scss */
+  .work-sample-small, .work-sample-large {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex-basis: 100%;
+  }
 }
 @media (max-width: 38.07em) {
-  /* line 262, ../sass/templates/_home.scss */
+  /* line 255, ../sass/templates/_home.scss */
   .case-image-wrap {
     display: inline;
     margin-left: auto;
@@ -1141,57 +1108,57 @@ form {
     height: 20em;
   }
 
-  /* line 272, ../sass/templates/_home.scss */
+  /* line 265, ../sass/templates/_home.scss */
   .case-about {
     width: 100%;
     float: none;
   }
-  /* line 275, ../sass/templates/_home.scss */
+  /* line 268, ../sass/templates/_home.scss */
   .case-about p, .case-about h2 {
     width: 100%;
   }
-  /* line 278, ../sass/templates/_home.scss */
+  /* line 271, ../sass/templates/_home.scss */
   .case-about a {
     display: block;
     margin: 2em auto 0 auto;
   }
 }
 @media (max-width: 34.3em) {
-  /* line 286, ../sass/templates/_home.scss */
+  /* line 279, ../sass/templates/_home.scss */
   #intro > div {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
   }
 
-  /* line 292, ../sass/templates/_home.scss */
+  /* line 285, ../sass/templates/_home.scss */
   .case-about a {
     position: relative;
   }
 }
 @media (max-width: 30.71em) {
-  /* line 298, ../sass/templates/_home.scss */
+  /* line 291, ../sass/templates/_home.scss */
   #intro {
     padding-bottom: 3em;
   }
 
-  /* line 301, ../sass/templates/_home.scss */
+  /* line 294, ../sass/templates/_home.scss */
   #stories > div {
     width: 95%;
   }
-  /* line 303, ../sass/templates/_home.scss */
-  #stories > div h1, #stories > div .intro--divider > h3, #stories > div h2 {
+  /* line 296, ../sass/templates/_home.scss */
+  #stories > div h1, #stories > div h2 {
     background: none;
   }
-  /* line 306, ../sass/templates/_home.scss */
-  #stories > div h1, #stories > div .intro--divider > h3 {
+  /* line 299, ../sass/templates/_home.scss */
+  #stories > div h1 {
     font-size: 3.3em;
   }
-  /* line 309, ../sass/templates/_home.scss */
+  /* line 302, ../sass/templates/_home.scss */
   #stories > div h2 {
     font-size: 1.5em;
   }
-  /* line 311, ../sass/templates/_home.scss */
+  /* line 304, ../sass/templates/_home.scss */
   #stories > div h2 span {
     display: inline;
   }
@@ -1204,7 +1171,7 @@ form {
 /* line 8, ../sass/templates/_resume.scss */
 #resume-header {
   align-items: center;
-  background: #404754;
+  background: #336667;
   color: white;
   display: table;
   display: flex;
@@ -1220,7 +1187,7 @@ form {
   vertical-align: middle;
 }
 /* line 25, ../sass/templates/_resume.scss */
-#resume-header h1, #resume-header .intro--divider > h3 {
+#resume-header h1 {
   margin: 2rem auto .5rem auto;
 }
 /* line 29, ../sass/templates/_resume.scss */
@@ -1261,7 +1228,7 @@ form {
 }
 /* line 70, ../sass/templates/_resume.scss */
 .resume-block:first-child {
-  background-color: #404754;
+  background-color: #d6a470;
   display: block;
   color: white;
 }
@@ -1285,10 +1252,10 @@ form {
 }
 /* line 93, ../sass/templates/_resume.scss */
 .resume-block-heading {
-  background: #404754;
+  background: #d6a470;
   text-align: center;
   clear: right;
-  color: #C6986B;
+  color: #d6a470;
   float: left;
   color: white;
   font-weight: bold;
@@ -1316,7 +1283,7 @@ form {
   display: inline-block;
   margin: .25em auto 1em auto;
   font-weight: bold;
-  color: #C6986B;
+  color: #d6a470;
 }
 /* line 128, ../sass/templates/_resume.scss */
 .resume-block-description {
