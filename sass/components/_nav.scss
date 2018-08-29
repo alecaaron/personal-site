@@ -5,23 +5,39 @@
 }
 
 #nav-bar{
-  height: auto;
+  height: 5rem;
   background: $color-primary;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   z-index: 10;
   top: 0;
   width: 100%;
   transition: top .3s
 }
+.nav-bar--title{
+  height: 5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.nav-bar--logo, .nav-bar--name{
+  margin-left: 2rem;
+}
 .nav-bar--logo{
   height: 3.5em;
   width: auto;
-  margin: .5em auto .5em 2rem;
   display: inline-block;
   position: relative;
+}
+.nav-bar--name{
+  color: $color-accent-light;
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: $serif;
 }
 
 .main-nav{

@@ -501,11 +501,12 @@ h1, h2, h3, h4 {
 
 /* line 7, ../sass/components/_nav.scss */
 #nav-bar {
-  height: auto;
+  height: 5rem;
   background: #336667;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   z-index: 10;
   top: 0;
@@ -513,16 +514,39 @@ h1, h2, h3, h4 {
   transition: top 0.3s;
 }
 
-/* line 19, ../sass/components/_nav.scss */
+/* line 20, ../sass/components/_nav.scss */
+.nav-bar--title {
+  height: 5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+/* line 26, ../sass/components/_nav.scss */
+.nav-bar--logo, .nav-bar--name {
+  margin-left: 2rem;
+}
+
+/* line 29, ../sass/components/_nav.scss */
 .nav-bar--logo {
   height: 3.5em;
   width: auto;
-  margin: .5em auto .5em 2rem;
   display: inline-block;
   position: relative;
 }
 
-/* line 27, ../sass/components/_nav.scss */
+/* line 35, ../sass/components/_nav.scss */
+.nav-bar--name {
+  color: #E5C4A1;
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: "Merriweather", serif;
+  /* align-self:  center; */
+  /* justify-self:  center; */
+}
+
+/* line 43, ../sass/components/_nav.scss */
 .main-nav {
   list-style: none;
   display: inline-block;
@@ -534,24 +558,24 @@ h1, h2, h3, h4 {
   position: relative;
 }
 
-/* line 37, ../sass/components/_nav.scss */
+/* line 53, ../sass/components/_nav.scss */
 .main-nav--li {
   display: inline;
 }
 
-/* line 40, ../sass/components/_nav.scss */
+/* line 56, ../sass/components/_nav.scss */
 .main-nav--a {
   padding: .5em;
   color: white;
   margin: 1.5em;
 }
-/* line 44, ../sass/components/_nav.scss */
+/* line 60, ../sass/components/_nav.scss */
 .main-nav--a:hover {
   border-bottom: 3px solid #d6a470;
 }
 
 @media screen and (max-width: 700px) {
-  /* line 54, ../sass/components/_nav.scss */
+  /* line 70, ../sass/components/_nav.scss */
   .main-nav {
     width: 50%;
     height: 5em;
